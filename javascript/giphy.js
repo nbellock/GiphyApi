@@ -24,9 +24,8 @@
          $("#buttons-view").append(a);
      }
  }
- // Calling renderButtons which handles the processing of our animal array
- renderButtons();
- // This function handles events where one button is clicked
+
+ // This function handles events where the submit button is clicked
  $("#add-animal").on("click", function (event) {
      // Preventing the buttons default behavior when clicked (which is submitting a form)
      event.preventDefault();
@@ -35,10 +34,11 @@
 
      // Adding the animal from the textbox to our array
      animals.push(animal);
-     console.log(animal)
+     console.log(animals)
 
 
  });
+ // Calling renderButtons which handles the processing of our animal array
  renderButtons();
 
  // Adding click event  listener to all buttons
@@ -89,7 +89,9 @@
                  // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
                  $("#gifs-appear-here").prepend(animalDiv);
              }
+
          });
+
  });
  // $(document).on("click", ".gifButton", displayGifInfo);
 
