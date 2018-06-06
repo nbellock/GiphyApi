@@ -39,7 +39,7 @@
 
  });
  // Calling renderButtons which handles the processing of our animal array
- //  renderButtons();
+ renderButtons();
 
  // Adding click event  listener to all buttons
  $("button").on("click", function () {
