@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GifPortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body background="images/random.png">
+
+
+
+    <header class="fixed-top" style="clear: both;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+            <div class="container">
+
+                <a class="navbar-brand bg-dark p-3 ml-3 ml-lg-0" href="index.html">
+                    <h1 class="text-white">Nikki Bellock</h1>
+                </a>
+
+                <div class="mr-3 mr-sm-3 mr-lg-0">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active my-0 py-0" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-0 py-1 py-md-0" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-0 py-0" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="bg-secondary pt-1"></div>
+    </header>
+
+
+    <div class="container py-5 my-5">
+        <div class="my-5">
+            <div class="bg-light p-4 border border-dark">
+                <h1>Portfolio</h1>
+
+                <div class="bg-secondary pt-1" style="border: .2px solid black"></div>
+
+                <div class="row" id="buttonPanel">
+                </div>
+                <!-- End row with animal buttons -->
+
+                <!-- Row containing the Gifs and the user form -->
+                <div class="row">
+
+                    <!-- Left panel containing the Gifs -->
+                    <div class="col-lg-10" id="gifPanel">
+                    </div>
+                    <!-- End left panel containing the Gifs  -->
+
+                    <!-- Right panel containing the user form -->
+                    <div class="col-lg-2 formPanel">
+                        <form id="animal-form">
+                            <label for="animal-input" class="inputLabel">Add an animal</label>
+                            <input type="text" id="animal-input">
+                            <br>
+
+                            <!-- Button triggers a new animal to be added -->
+                            <input id="add-animal" type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <!-- End right panel containing the user form -->
+
+                </div>
+                <!-- End row with Gifs and user form -->
+
+
+
+            </div>
+            <!-- End Bootstrap Grid -->
+
+            <script type="text/javascript" src="javascript/giphy1.js"></script>
+
+</body>
+
+</html>
